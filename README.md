@@ -68,42 +68,5 @@ Power BI Desktop
 Installation & Setup
 Clone the repository:
 
-Bash
-
-git clone https://github.com/[YOUR_USERNAME]/[YOUR_REPO_NAME].git
-cd [YOUR_REPO_NAME]
-Python Environment:
-Create and activate a virtual environment, then install the required packages.
-
-Bash
-
-# For Windows
-python -m venv venv
-.\venv\Scripts\activate
-
-# For MacOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-
-# Install packages
-pip install -r requirements.txt
-Snowflake Configuration:
-
-Log in to your Snowflake account.
-
-Use the SQL scripts in the /snowflake_setup folder to create the database, schemas, tables, and warehouse.
-
-Update the config.ini file with your Snowflake account details and credentials.
-
-Power BI Connection:
-
-Open the OT_Analytics_Dashboard.pbix file.
-
-When prompted, enter your Snowflake server URL and credentials to connect Power BI to the data warehouse.
-
-🎈 Usage
-Run the Python Downloader:
-Execute the main script to start the data pipeline. This will fetch new data and load it into Snowflake's landing zone.
-
 
 Open a Pull Request
